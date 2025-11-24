@@ -195,7 +195,7 @@ for (int i = 0; i < n; i++) {
 ```bash
 # 1. Initialize and sync (2-6 hours for download)
 mkdir ~/android/esm && cd ~/android/esm
-repo init -u https://github.com/esm-android/manifest.git
+repo init -u https://github.com/esm-android/esm-manifest.git
 repo sync -c -j8
 
 # 2. Download proprietary binaries
@@ -268,7 +268,7 @@ mkdir -p ~/android/esm
 cd ~/android/esm
 
 # Initialize with ESM manifest (includes all ESM changes!)
-repo init -u https://github.com/esm-android/manifest.git
+repo init -u https://github.com/esm-android/esm-manifest.git
 
 # Download source (~100 GB, 2-6 hours depending on connection)
 repo sync -c -j8 --force-sync --no-clone-bundle
@@ -539,7 +539,7 @@ This manifest pulls from the following ESM-modified repositories:
 
 | Repository | Description |
 |------------|-------------|
-| [manifest](https://github.com/esm-android/manifest) | This manifest |
+| [esm-manifest](https://github.com/esm-android/esm-manifest) | This manifest |
 | [bionic](https://github.com/esm-android/bionic) | Bionic with ESM syscalls |
 | [build](https://github.com/esm-android/build) | Build system integration |
 | [device-redfin](https://github.com/esm-android/device-redfin) | Pixel 5 device config |
